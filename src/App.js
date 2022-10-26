@@ -1,5 +1,5 @@
 import Expenses from "./components/Expenses/Expenses";
-import NewExpense from "./components/Expenses/NewExpense/NewExpense";
+import NewExpense from "./components/NewExpense/NewExpense";
 // src\components\Expenses\NewExpense\NewExpense.js
 // src\components\Expenses\NewExpense\NewExpense.js
 
