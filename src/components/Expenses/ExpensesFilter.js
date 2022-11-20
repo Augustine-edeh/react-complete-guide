@@ -2,11 +2,9 @@ import React from "react";
 import "./ExpensesFilter.css";
 
 const ExpensesFilter = (props) => {
-  const yearChangeHandler = () => {
-    const selectedYear = document.querySelector(
-      ".expenses-filter__filteredYear"
-    ).value;
-    props.onFilterYearChange(selectedYear);
+  const yearChangeHandler = (event) => {
+    const selectedYear = event.target.value;
+    props.onChangeFilter(selectedYear);
   };
 
   return (
@@ -14,6 +12,7 @@ const ExpensesFilter = (props) => {
       <div className="expenses-filter__control">
         <label>Filter by year</label>
         <select
+          value={props.selected}
           className="expenses-filter__filteredYear"
           onChange={yearChangeHandler}
         >
