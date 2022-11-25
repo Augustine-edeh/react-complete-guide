@@ -1,3 +1,4 @@
+// Just added this to indicate that: 'This is the Instuctor's solution to the Assignment'
 import React from "react";
 
 import "./NewExpense.css";
